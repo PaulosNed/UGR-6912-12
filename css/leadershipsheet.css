@@ -1,0 +1,25 @@
+body{
+    font-family: ebrima, sans-serif, helvetica, calibri;
+    color: #ffffffde;
+    height: 100vh;
+}
+section{
+    text-align: center;
+}
+a{
+    color: #ff8069;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 300px){
+    section img{
+        width: 174px;
+        height: 100px;
+    }
+}
+
+

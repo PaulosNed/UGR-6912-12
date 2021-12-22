@@ -1,0 +1,117 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffffde;
+    font-family: ebrima, sans-serif, helvetica, calibri;
+}
+
+#section1 header{
+	padding-top: 10px;
+    text-align: center;
+    border-bottom: 2px solid #7a7070;
+    border-radius: 10px;
+}
+#section1 header nav a{
+    padding: 20px;
+    font-family: Times New Roman, sans-serif;
+    text-decoration: none; 
+    color: #ff8069;   
+}
+#section1 header nav a:hover{
+    color: #ffffffde;
+}
+#section3 a{
+    text-decoration: none;
+    color: #ff8069;
+}
+#section3 a:hover{
+    text-decoration: underline ;
+}
+#section5 footer{
+    font-size: 10px;
+    border-top: 2px solid #7a7070;
+    font-family: Times New Roman, sans-serif;
+ }
+
+
+@media (orientation: landscape) and (min-width: 951px){
+    .container-grid{
+        display: grid;
+        grid-template-columns: auto 60% auto;
+        grid-template-rows: 2em 50em 1em;
+        height: 100vh;
+        }
+    
+    #section1{
+        grid-column: 1/4;
+        grid-row: 1;
+        }
+    #section2{
+        grid-column: 1;
+        grid-row: 2;
+        }
+    
+    #section3{
+        padding-top: 3rem;
+        grid-column: 2;
+        grid-row: 2;
+        }
+    
+    #section4{
+        grid-column: 3;
+        grid-row: 2;
+        }
+    
+    #section5{
+        grid-column: 1/4;
+        grid-row: 3;
+        bottom: 0%;
+        }
+    }
+    
+@media (orientation: portrait) , (max-width: 950px) {
+        .container-grid{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 2rem auto 1rem;
+            grid-gap: 5rem;
+            font-size: 4vw;
+        }
+        
+        #section1{
+            grid-row: 1;
+        }
+        #section3{
+            grid-row: 2;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        #section5{
+            grid-row: 3;
+            bottom: 0px;
+        }
+    }
+
+@media (orientation: portrait) and (min-width: 511px) and (min-height: 1023px){
+        .container-grid{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 4vh 90vh 2vh;
+            grid-gap: 2vh;
+        }
+        
+        #section1{
+            grid-row: 1;
+        }
+        #section3{
+            grid-row: 2;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        #section5{
+            grid-row: 3;
+            bottom: 0px;
+        }    
+} 

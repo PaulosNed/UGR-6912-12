@@ -1,0 +1,198 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffffde;
+    font-family: ebrima, sans-serif, helvetica, calibri;
+}
+
+.container-grid{
+    display: grid;
+    height: 100vh;
+}
+#burger-button{
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 10px;
+}
+.burger{
+    margin: 2px;
+    height: 3px;
+    width: 20px;
+    background-color: #7a7070;
+    border: 1px solid #ffffffde;
+    border-radius: 5px;
+
+}
+
+#section1 header{
+	padding-top: 10px;
+    text-align: center;
+    border-bottom: 2px solid #7a7070;
+    border-radius: 10px;
+}
+#section1 header nav a{
+    padding: 20px;
+    font-family: Times New Roman, sans-serif;
+    text-decoration: none;    
+}
+
+#section6 footer{
+    margin-top: 2%;
+    font-size: 10px;
+    border-top: 2px solid #7a7070;
+    font-family: Times New Roman, sans-serif;
+ }
+
+
+
+@media (orientation: landscape) and (min-width: 951px){
+    .container-grid{
+        grid-template-columns: auto 60% auto;
+        grid-template-rows: 2rem 25em 25em 1rem;
+        font-size: 2.1vh;
+        grid-gap: 0.5vh;
+        }
+    #section1{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+    #section1 header nav a{
+        color: #ff8069; /*#C9C9C98*/
+    }
+    #section1 header nav a:hover{
+        color: #ffffffde;
+    }
+    #section2{
+        grid-column: 1;
+        grid-row: 2;
+        padding: 5vh;
+        padding-top: 14vh;
+    }
+    #section2 img{
+        width: 30vh;
+        height: 29vh;
+    }
+    #section3{
+        grid-column: 2;
+        grid-row: 2;
+        padding: 5vh;
+        padding-top: 8vh;
+    }
+    
+    #section4{
+        grid-column: 2;
+        grid-row: 3;
+        padding: 5vh;
+        padding-top: 5vh;
+    }
+    #section5{
+        grid-column: 3;
+        grid-row: 3;
+        padding: 5vh;
+        padding-top: 8vh;
+    }
+    #section5 img{
+        width: 30vh;
+        height: 29vh;
+    }
+    #section6{
+        grid-column: 1/4;
+        grid-row: 4;
+        margin-top: 5.5vh;
+    }
+}
+
+@media (orientation: portrait) , (max-width: 950px) {
+    .container-grid{
+        grid-template-rows: 2vh auto auto auto auto 1vh;
+        grid-gap: 5vh;
+    }
+    #section1{
+        grid-row: 1;
+    }
+    #section1 header{
+        border-bottom: 0px;
+    }
+    #burger-button{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
+    #section1 header nav a{
+        display: block;
+        margin: -20px;
+        z-index: 1000;
+        color: #ffffffde;
+        font-family:  ebrima , helvetica;
+    }
+    #section1 header nav a:hover{
+        color: #000000de;
+        text-decoration: underline;
+    }
+
+    nav span{
+        display: none;
+    }
+    nav{
+        float: right;
+        margin-top: 23px;
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+        background-color: #ffffff56;
+        border-color: #719ECE;
+        box-shadow: 0 0 15px #719ECE;
+  	    border: 1px solid #719ECE;
+        padding: 5vw 10vw 5vw 10vw;
+    }
+    #section2{
+        grid-row: 2;
+        text-align: center;
+        margin-top: 20vh;
+    }
+    #section2 img{
+        width: 53%;
+        height: 100%;
+    }
+    #section3{
+        grid-row: 3;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    #section4{
+        grid-row: 5;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #section5{
+        grid-row: 4;
+        text-align: center;
+    }
+    #section5 img{
+        width: 53%;
+        height: 100%;
+    }
+
+    #section6{
+        grid-row: 6;
+    }
+}
+
+@media (orientation: portrait){
+    body{
+        font-size: 2vh;
+    }
+}
+
+@media (orientation: landscape) and (max-width:950px) {
+    body{
+        font-size: 3.5vh;
+    }
+}
+
