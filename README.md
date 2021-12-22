@@ -1,5 +1,3 @@
-# UGR-6912-12
-Web-design assignment with pure html and css
+# Personal Portifolio and Profile page
 Name: Paulos Dessie Nedaw
-Section: 3
-
+ID: UGR/6912/12
