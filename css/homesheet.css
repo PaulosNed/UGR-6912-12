@@ -85,7 +85,7 @@ body{
         color: #ffffffde;
         font-family:  ebrima , helvetica;
     }
-    #section1 header nav a:focus{
+    #section1 header nav a:hover{
         color: #000000de;
         text-decoration: underline;
     }
