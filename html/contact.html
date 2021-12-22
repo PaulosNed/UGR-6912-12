@@ -9,7 +9,7 @@
 		<section class="container-grid">
         <section class="section" id="section1"> 
           <header>
-            <nav class="hide">
+            <nav role="navigation" class="hide">
               <a href="../index.html">Home</a> <span> | </span>&nbsp;
               <a href="./About.html">About</a> <span> | </span>&nbsp;
               <a href="./CV.html">Résumé/CV</a> <span> | </span>&nbsp;
@@ -17,73 +17,70 @@
               <a href="./reference.html">Reference</a> <span> | </span>&nbsp;
               <a href="./contact.html">Contact</a> 
             </nav>
-            <div id="burger-button">
-              <div class="burger"></div>
-              <div class="burger"></div>
-              <div class="burger"></div>
+            <div role="menu" id="burger-button">
+              <div role="menubar" class="burger"></div>
+              <div role="menubar" class="burger"></div>
+              <div role="menubar" class="burger"></div>
             </div>
           </header>
          </section>
 			<section id="section2"> 
 				<p>
-                        <form>
-                          
-                            <div class="col">
-                              <label for="fname">First Name</label><br>
-                            </div>
-                            <div class="col">
-                              <input type="text" id="fname" name="">
-                            </div>
-                          
-                          
-                            <div class="col">
-                              <label for="lname">Last Name</label><br>
-                            </div>
-                            <div class="col">
-                              <input type="text" id="lname" name="">
-                            </div>
-                          
-                          
-                            <div class="col">
-                              <label for="email">Email</label><br>
-                            </div>
-                            <div class="col">
-                              <input type="email" id="email" name="">                                
-                            </div>
-                          
-                          
-                            <div class="col">
-                              <label for="message">Message</label><br>
-                            </div>
-                            <div class="col">
-                              <textarea id="message" name="" style="height:200px;"></textarea>
-                            </div>
-                          
-                          
-                              <div class="col">
-                                 <input type="submit" value="Submit" aria-label="submit-button">
-                              </div>
-                          
-                        </form>
-    			</p>
+          <form> 
+            <div role="button" class="col">
+              <label for="fname">First Name</label><br>
+            </div>
+            <div role="button" class="col">
+              <input type="text" id="fname" name="">
+            </div>
+          
+          
+            <div role="button" class="col">
+              <label for="lname">Last Name</label><br>
+            </div>
+            <div role="button" class="col">
+              <input type="text" id="lname" name="">
+            </div>
+          
+          
+            <div role="button" class="col">
+              <label for="email">Email</label><br>
+            </div>
+            <div role="button" class="col">
+              <input type="email" id="email" name="">                                
+            </div>
+          
+          
+            <div role="button" class="col">
+              <label for="message">Message</label><br>
+            </div>
+            <div role="button" class="col">
+              <textarea id="message" name="" style="height:200px;"></textarea>
+            </div>
+          
+          
+            <div role="button" class="col">
+                <input type="submit" value="Submit" aria-label="submit-button">
+            </div>
+        
+          </form>
+    		</p>
 			</section>
-            <section class="section" id="section3">
-                <h3>you can also contact me via:</h3>
-                <div class="container-flex">
-                    <a class="item" href="mailto: pauldessie@gmail.com">Gmail</a>
-                    <a class="item" href="https://t.me/Chill_bruh">Telegram</a>
-                    <a class="item" href="https://twitter.com/Paulos_Ned">Twitter</a>
-                    <a class="item" href="https://www.facebook.com/paulos.dessie.9">Facebook</a>
-                    <a class="item" href="https://www.instagram.com/paulos_ned/?hl=en">Instagram</a>
-                </div>
-            </section>
-<section class="section" id="section4">
-				<footer>
-            
-            	<article> all rights are reserved to the owner. any act of stealing may result in series money or jail-time punishment and credits should be given to the owner if shared</article>
-
-        		</footer> 
-        	</section>
+      <section class="section" id="section3">
+          <h3>you can also contact me via:</h3>
+          <div role="tab" class="container-flex">
+              <a class="item" href="mailto: pauldessie@gmail.com">Gmail</a>
+              <a class="item" href="https://t.me/Chill_bruh">Telegram</a>
+              <a class="item" href="https://twitter.com/Paulos_Ned">Twitter</a>
+              <a class="item" href="https://www.facebook.com/paulos.dessie.9">Facebook</a>
+              <a class="item" href="https://www.instagram.com/paulos_ned/?hl=en">Instagram</a>
+          </div>
+      </section>
+      <section role="doc-endnote" class="section" id="section4">
+				<footer> 
+          <article role="article"> all rights are reserved to the owner. any act of stealing may result in series money or jail-time punishment and credits should be given to the owner if shared</article>
+        </footer> 
+      </section>
 		</section>
 	</body>
   <script src="../js/burger.js"></script>

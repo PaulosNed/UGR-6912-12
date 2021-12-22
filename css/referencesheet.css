@@ -13,7 +13,7 @@ body{
 }
 #burger-button{
     display: none;
-    position: fixed;
+    position: absolute;
     top:0;
     right:0;
     margin: 10px;
@@ -41,7 +41,9 @@ body{
 }
 
 
-
+#section3{
+    text-align: center;
+}
 #section3 a{
     display: inline;
     text-decoration: none;
@@ -50,15 +52,11 @@ body{
 #section3 a:hover{
     text-decoration: underline ;
 }
-#section3{
-    grid-row: 2/3;
-    margin-top: 3rem;
-    text-align: center;
+#section3 a:focus{
+    color: #8899AC;
 }
 #section3 img{
-    padding: 30px;    
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 40px 20px 20px 20px;    
 }
 #section3 table{
     line-height: 150%;
@@ -77,7 +75,9 @@ body{
     text-decoration: underline ;
 }
 
-
+#section5{
+    margin-top: 5vh;
+}
 #section5 footer{
     font-size: 9px;
     border-top: 2px solid #7a7070;
@@ -138,9 +138,12 @@ body{
     #section5{
         grid-row: 3;
     }
+   #section5 footer article{
+        font-size: 5px;
+    }
 }
 
-@media (orientation: landscape) and (min-width: 951px){
+@media (min-width: 951px)  and (orientation: landscape) {
 
     .container-grid{
         grid-template-columns: auto 60% auto;
@@ -186,6 +189,15 @@ body{
     body{
         font-size: 2vh;
     }
+    #section5 footer article{
+        font-size: 5px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 450px){
+    #section5 footer article{
+        font-size: 3px;
+}
 }
 
 @media (orientation: landscape) and (max-width:950px) {

@@ -62,7 +62,7 @@ body{
 
 @media (orientation: portrait) , (max-width: 950px) {
     .container-grid{
-        grid-template-rows: 2rem auto 1rem;
+        grid-template-rows: 2rem auto 1em;
         grid-gap: 14.5vh;
     }
     
@@ -113,6 +113,9 @@ body{
     #section5{
         grid-row: 3;
     }
+    #section5 footer article{
+        font-size: 5px;
+    }
 }
 
 @media (orientation: landscape) and (min-width: 951px){
@@ -161,6 +164,15 @@ body{
     body{
         font-size: 2vh;
     }
+    #section5 footer article{
+        font-size: 5px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 450px){
+    #section5 footer article{
+        font-size: 3px;
+}
 }
 
 @media (orientation: landscape) and (max-width:950px) {

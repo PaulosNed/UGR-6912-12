@@ -39,6 +39,9 @@ body{
     text-decoration: none;    
 }
 
+#section2 table{
+    border-radius: 2px;
+}
 #section2 table tr th{
     line-height: 2.5rem;
 }
@@ -56,6 +59,7 @@ body{
     font-size: 9px;
     border-top: 2px solid #7a7070;
     font-family: Times New Roman, sans-serif;
+    margin-top: 5vh;
  }
 
 
@@ -111,20 +115,21 @@ body{
         grid-row: 2;
         margin-top: 10vh ;
     }
-    /* #section2 table tr{
-        display: table-cell;
-        line-height: 1vw;
-    } */
+    #section2 table tr th{
+        line-height: 1.5rem;
+    }
     #section3{
         grid-row: 3;
         text-align: center;
     }
     #section4{
         grid-row: 4;
-        /* margin-top: 63vh; */
+    }
+    #section4 footer article{
+        font-size: 5px;
+    }
         
 
-}
 }
 
 @media (orientation: landscape) and (min-width: 951px){
@@ -148,7 +153,7 @@ body{
 #section2{
 	grid-column: 1;
 	grid-row: 2;
-    margin-top: 25vh;
+    margin-top: 33vh;
     margin-left: 2vh;
 }
 #section3{
@@ -171,6 +176,15 @@ body{
     body{
         font-size: 2vh;
     }
+    #section4 footer article{
+        font-size: 5px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 450px){
+    #section4 footer article{
+        font-size: 3px;
+}
 }
 
 @media (orientation: landscape) and (max-width:950px) {
